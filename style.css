@@ -1,36 +1,70 @@
 *{
-    margin: 0px;
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
 }
-ul{
-    background-color: rgb(30, 163, 163);
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    position: sticky;
+header{
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(16, 12, 3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.cadastro{
+    position: absolute;
+    left: 1350px;
+    top: -12px;
     
 }
-li{
-    float:left;
-    display: block;
-    padding: 10px 12px;
-    font: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: aliceblue;
-    border-right: 1.5px solid;
+.cadastro
+.navegacao{
+    margin-left: 240px;
+    position: absolute;
 }
-li:hover{
-    background-color: rgb(38, 194, 194);
+.logo{
+    font-size: 2.1em;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+  
 }
-h1{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: green;
+.navegacao a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    
 }
-.banner{
-    border: 2px solid;
-    margin: 30px 10% 20px;
-    height: 400px;
-    width: 80%;
+
+
+.navegacao a:hover{
+    transition: 2s;
+    border-bottom: 2px solid #fff;
 }
+.navegacao .cadastro{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 40px;
+    margin-left: 40px;
+}
+
+.navegacao .cadastro:hover{
+    background: #fff;
+    color: black;
+}
+
