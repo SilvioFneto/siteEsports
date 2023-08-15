@@ -1,9 +1,7 @@
 *{
-   margin: 0; 
-   padding: 0;
-   box-sizing: border-box;
-   font-family: sans-serif;
+    margin: 0px;
 }
+/*augusto*/
 header{
     position: fixed;
     top: 0;
@@ -68,3 +66,35 @@ header{
     color: black;
 }
 
+/*augusto*/  
+
+/*silvio*/
+
+.banner{
+    width: 100%;
+}
+
+/*produtos*/
+.produtos{
+    margin: 10px;
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+    display: grid;
+    grid-template-columns: 32% 32% 32% ;
+    gap: 17px;
+    margin-bottom: 45px;
+}
+.row{
+    border: 2px black solid;
+}
+.row img{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.product-text h5{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
