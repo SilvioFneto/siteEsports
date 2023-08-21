@@ -15,16 +15,12 @@ header{
     z-index: 99;
     margin-bottom: 1px;
 }
-.cadastro{
-    position: absolute;
-    left: 1350px;
-    top: -12px;
-    
-}
 
 .navegacao{
     margin-left: 240px;
     position: absolute;
+    width: 65%;
+    margin-right: 1px;
 }
 .logo{
     font-size: 2.1em;
@@ -43,12 +39,13 @@ header{
     
 }
 
-
-.navegacao a:hover{
-    transition: 2s;
-    border-bottom: 2px solid #fff;
+.cadastro {
+    position: absolute;
+    left: 70%;
+    text-decoration: none;
 }
-.navegacao .cadastro{
+
+.cadastro button{
     width: 130px;
     height: 50px;
     background: transparent;
@@ -60,9 +57,11 @@ header{
     font-size: 1.1em;
     font-weight: 40px;
     margin-left: 40px;
+    margin-left: 0px;
+    
 }
 
-.navegacao .cadastro:hover{
+.navegacao .cadastro button:hover{
     background: #fff;
     color: black;
 }
@@ -131,16 +130,68 @@ section{
     margin-bottom: 45px;
 }
 .row{
-    border: 2px black solid;
+    border: 2px rgb(168, 168, 168) solid;
+    border-radius: 4px;
 }
 .row img{
     width: 100%;
     height: auto;
-    
-    
 }
+
 .product-text h5{
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.product-text {
     text-align: center;
+}
+/*rodapé*/
+footer{
+    width: 100%;
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+#footer_content{
+    background-color:#000 ;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 3rem 3.5rem;
+    
+}
+#footer_contacs{
+    margin-bottom: 2px;
+}
+#footer_social_media{
+    display: flex;
+    gap: 5px;
+    margin-top: 4px;
+}
+#footer_social_media .footer-link{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 17px;
+    width: 17px;
+    color: #fff;
+    border-radius: 50%;
+}
+#instagram{
+    background-color: rgb(250, 38, 250);
+}
+#facebook{
+    background-color: rgb(8, 107, 255);
+}
+#whatsapp{
+    background-color: rgb(8, 255, 61);
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    list-style: none;
+    font-size: 20px;
+}
+.footer-list .footerlink{
+    color: rgb(158, 158, 158);
+    text-decoration: none;
 }

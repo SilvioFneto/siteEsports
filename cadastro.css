@@ -9,15 +9,22 @@
 } 
 
 body {
-    background: #1B2029;
-    color: white;
+    background: #f1f1f1;
+    color: rgb(0, 0, 0);
     font-weight: 500;
-    display: flex;
-    min-width: 100vw;
+    margin: 10%;
+    margin-bottom: 0px;
+}
+form{
+    background-color: #040B18;
+    color: white;
+    border-radius: 6px;
+    padding: 10px;
 }
 
+
 main {
-    width: 50vw;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +36,7 @@ a img{
 }
 
 main h1 {
-    color: #8880FE;
+    color: #0d0d0f;
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -124,15 +131,16 @@ main form input[type="submit"]:hover {
 }
 
 section.images {
-    width: 50vw;
+    width: auto;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 3rem;
+    
 }
 
 section.images img {
-    width: 80%;
+    width: 80px;
+    height: 60px;
 }
 
 section.images .circle {
@@ -146,37 +154,3 @@ section.images .circle {
     z-index: -1;
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
-    section.images img {
-        width: 110%;
-    }
-
-    section.images .circle {
-        clip-path: circle(35% at right 80%);
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    section.images {
-        display: none;
-        visibility: hidden;
-    }
-
-    main {
-        width: 100vw;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    main h1 {
-        font-size: 2rem;
-    }
-
-    main .alternative span {
-        font-size: 0.8rem;
-    }
-
-    main form label span, main form input[type="submit"] {
-        font-size: 1rem;
-    }
-}
