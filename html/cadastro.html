@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
 </head>
 <body>
     <main>
         <h1>criar conta</h1>
         <div class="imagens">
             <a href="#">
-                <img src="imagens/google-37.png" alt="Google">
+                <img src="../imagens/google-37.png" alt="Google">
             </a>
             <a href="#">
-                <img src="imagens/facebook png.webp" alt="Facebook">
+                <img src="../imagens/facebook png.webp" alt="Facebook">
             </a>
             <a href="#">
-                <img src="imagens/linkedin logo png.webp" alt="Linkedin">
+                <img src="../imagens/linkedin logo png.webp" alt="Linkedin">
             </a>
         </div>
 
@@ -29,25 +29,39 @@
         <form action="">
             <label for="name">
                 <span>Nome</span>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" onkeyup="semnumero()">
             </label>
 
             <label for="email">
                 <span>E-mail</span>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" oncopy="copiar()">
             </label>
 
             <label for="password">
                 <span>Senha</span>
-                <input type="password" id="password" name="password">
+                <input type="password" id="password" name="password" onpaste="colarr()">
             </label>
+            <p id="algo"></p>
 
             <input type="submit" value="Sign Up" id="button">
         </form>
     </main>
     <section class="images">
-        <img src="imagens/mobile.svg" alt="Mobile">
+        <img src="../imagens/mobile.svg" alt="Mobile">
         <div class="circle"></div>
     </section>
+    
+    <script>
+        function copiar() {
+    document.getElementById("algo").innerHTML = "Você copiou seu email"
+    }
+        function semnumero() {
+            let str = document.getElementById("name");
+            str.value = str.value.replace(/[0-9]/g, '');
+        }
+        function colarr() {
+        document.getElementById("algo").innerHTML = "voce colou a senha!";
+        }
+    </script>
 </body>
 </html>
