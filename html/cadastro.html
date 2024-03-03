@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="../css/cadastro.css">
 </head>
 <body>
+    <div>
+        <header>
+            <h2 class="logo">WC STORE</h2>
+            <nav class="navegacao">
+                <a href="Untitled-1.html">home</a>
+                
+                <a href="cadastro.html" class="cadastro"><button >Login</button></a>
+            </nav>
+        </header>
+    </div>
     <main>
         <h1>criar conta</h1>
         <div class="imagens">
@@ -29,64 +39,65 @@
         <form action="">
             <label for="name">
                 <span>Nome</span>
-                <input type="text" id="name" name="name" onkeyup="semnumero()">
+                <input type="text" id="name" name="name" oninput="semnumero()">
             </label>
 
             <label for="email">
                 <span>E-mail</span>
-                <input type="email" id="email" name="email" oncopy="copiar()">
+                <input type="email" id="email" name="email" >
             </label>
 
             <label for="Telefone">
                 <span>Telefone</span>
-                <input type="tel" id="tel" name="tel" >
+                <input type="tel" id="tel" name="tel" oninput="semletra()" >
             </label>
 
-            <label for="Telefone">
+            <label for="DataNascimento">
                 <span>Data de nascimento</span>
-                <input type="" id="dt_nasc" name="dt_nasc" >
+                <input type="date" id="dt_nasc" name="dt_nasc"  >
             </label>
 
-            <label for="Telefone">
+            <label for="Sexo">
                 <span>Sexo</span>
-                <input type="text" id="sexo" name="sexo" >
+                <div class="radio">
+                <input type="radio" id="masc" name="sexo"><span>Masculino </span>
+                <input type="radio" id="fem" name="sexo"><span>feminino </span>
+                <input type="radio" id="other" name="sexo"><span>outro </span>
+                </div>
             </label>
 
-            <label for="Telefone">
+            <label for="Copf">
                 <span>Cpf</span>
                 <input type="" id="cpf" name="cpf" >
             </label>
 
             <label for="password">
                 <span>Senha</span>
-                <input type="password" id="password" name="password" onpaste="colarr()">
+                <input type="password" id="password" name="password" >
             </label>
             <p id="algo"></p>
 
-            <label for="password">
+            <label for="rptpassword">
                 <span>Confirmar senha</span>
-                <input type="password" id="password" name="password" onpaste="colarr()">
+                <input type="password" id="confirmpassword" name="password">
             </label>
             <p id="algo"></p>
 
             <input type="submit" value="Sign Up" id="button">
         </form>
     </main>
-    <section class="images">
-        <img src="../imagens/mobile.svg" alt="Mobile">
-        <div class="circle"></div>
-    </section>
+    
     
     <script>
-        function copiar() {
-    document.getElementById("algo").innerHTML = "Você copiou seu email"
-    }
+        
         function semnumero() {
-            let str = document.getElementById("name");
-            str.value = str.value.replace(/[0-9]/g, '');
+        let str = document.getElementById("name");
+        str.value = str.value.replace(/[0-9]/g, '');
         }
-        function colarr() {
-        document.getElementById("algo").innerHTML = "voce colou a senha!";
+        
+        function semletra() {
+        let str = document.getElementById("tel");
+        str.value = str.value.replace(/[^0-9]/g, '');
         }
     </script>
 </body>
