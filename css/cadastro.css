@@ -22,7 +22,40 @@ form{
     padding: 10px;
 }
 
-
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+header .logo{
+    font-size: 2rem;
+    color: #000;
+    font-weight: 500;
+}
+header .navbar a{
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0 2rem;
+}
+header .navbar a:hover{
+    color: orangered;
+}
+header .icons a{
+    font-size: 2rem;
+    color: #000;
+    margin-left: 1.5rem;
+}
+header .icons a:hover{
+    color: orangered;
+}
 main {
     
     display: flex;
@@ -102,6 +135,11 @@ main form label {
 main form label span {
     font-size: 1.1rem;
     margin-top: 2rem;
+}
+div.radio input {
+    width: 20px;
+    height: 20px;
+    margin-left: 18px;
 }
 
 main form input {
