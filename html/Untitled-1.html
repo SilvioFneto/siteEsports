@@ -1,122 +1,393 @@
-<!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>WC Store</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <div>
-    <header>
-        <h2 class="logo">WC STORE</h2>
-        <nav class="navegacao">
-            <a href="#">home</a>
-            <a href="#">Mulheres</a>
-            <a href="#">kids</a>
-            <a href="#">Homens</a>
-            
-            <a href="cadastro.html" class="cadastro"><button >Login</button></a>
-        </nav>
-    </header>
-</div>
-   
+    <head>
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>WC STORE</title>
+    </head>
+    <body>
+        <header>
+            <div id="menu-bar" class="fa fa-bars"></div>
+            <a href="#" class="logo">WC STORE</a>
+            <nav class="navbar">
+                <a href="index.html">Inicios</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="#fearured">Favoritos</a>
+                <a href="#blog">blog</a>
+            </nav>
+            <div class="icons">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="cadastro.html"><i class="fa fa-user"></i></a>
+            </div>
+        </header>
+        <!--end header-->
+        <section class="home" id="home">
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Sport Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                           Desfrute de conforto incomparável e estilo autêntico com os tênis Nike. Projetados para 
+                           elevar cada passo, oferecem tecnologia avançada e design inovador. Deixe sua marca 
+                           com a confiança única da Nike em seus pés, VOCÊ SÓ ENCONTRA AQUI NA WC.
 
-<section>
-    <div class="banner">
+                        </p>
+                        <a href="#" class="btn">ADICIONAR AO CARRINHO</a>
+                    </div>
+                    <div class="image">
+                        <img src="../imagens/slide/1.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Sport Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            Desfrute de conforto incomparável e estilo autêntico com os tênis Nike. Projetados para 
+                            elevar cada passo, oferecem tecnologia avançada e design inovador. Deixe sua marca 
+                            com a confiança única da Nike em seus pés, VOCÊ SÓ ENCONTRA AQUI NA WC.
+                        </p>
+                        <a href="#" class="btn">ADICIONAR AO CARRINHO</a>
+                    </div>
+                    <div class="image">
+                        <img src="../imagens/slide/2.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Sport Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            Desfrute de conforto incomparável e estilo autêntico com os tênis Nike. Projetados para 
+                            elevar cada passo, oferecem tecnologia avançada e design inovador. Deixe sua marca 
+                            com a confiança única da Nike em seus pés, VOCÊ SÓ ENCONTRA AQUI NA WC.
+                        </p>
+                        <a href="#" class="btn">ADICIONAR AO CARRINHO</a>
+                    </div>
+                    <div class="image">
+                        <img src="../imagens/slide/3.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Sport Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            Desfrute de conforto incomparável e estilo autêntico com os tênis Nike. Projetados para 
+                            elevar cada passo, oferecem tecnologia avançada e design inovador. Deixe sua marca 
+                            com a confiança única da Nike em seus pés, VOCÊ SÓ ENCONTRA AQUI NA WC.
+                        </p>
+                        <a href="#" class="btn">ADICIONAR AO CARRINHO</a>
+                    </div>
+                    <div class="image">
+                        <img src="../imagens/slide/4.png" class="shoe">
+                    </div>
+                </div>
+            </div>
 
-        <div id="escrita">
-            <h1>Bem vindo a WC Store</h1>
-            <p> confira nossos produtos </p>
-            <a href="#" class="main-btn">loja </a>
+            <div id="prev" class="fa fa-angle-left" onclick="prev();"></div>
+            <div id="next" class="fa fa-angle-right" onclick="next();"></div>
+        </section>
+        <!--end home-->
+        <section class="product" id="product">
+            <h1 class="heading">ÚLTIMOS<span> PRODUTOS </span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="../imagens/product4/1.jpg" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">200R$ <span>220R$</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="../imagens/product4/2.jpg" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">160R$<span>180R$</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="../imagens/product4/3.jpg" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">200R$ <span>250R$</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="../imagens/product4/5.jpg" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">200R$ <span>250R$</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="../imagens/product4/7.png" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">200R$ <span>250R$</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="../imagens/product4/8.png" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">200R$ <span>250R$</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end product-->
+        <section class="featured" id="fearured">
+            <h1 class="heading">New <span>Product</span></h1>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="../imagens/product1/1.jpg" alt="" class="featured-image-1">
+                        <img src="../imagens/product1/2.jpg" alt="" class="featured-image-1">
+                        <img src="../imagens/product1/3.jpg" alt="" class="featured-image-1">
+                        <img src="../imagens/product1/4.jpg" alt="" class="featured-image-1">
+                    </div>
+                    <div class="big-image">
+                        <img src="../imagens/product1/1.jpg" alt="" class="big-image-1">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>new nike airmac shoes</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Desperte sua jornada com os tênis Nike: a fusão perfeita de estilo e desempenho, 
+                        oferecendo conforto incomparável em cada movimento.
+                    </p>
+                    <div class="price">90R$ <span>12090R$ </span></div>
+                    <a href="#" class="btn">ADICIONAR AO CARRINHO</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="../imagens/product2/1.jpg" alt="" class="featured-image-2">
+                        <img src="../imagens/product2/2.jpg" alt="" class="featured-image-2">
+                        <img src="../imagens/product2/3.jpg" alt="" class="featured-image-2">
+                        <img src="../imagens/product2/4.jpg" alt="" class="featured-image-2">
+                    </div>
+                    <div class="big-image">
+                        <img src="../imagens/product2/1.jpg" alt="" class="big-image-2">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>new nike airmac shoes</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Eleve seu jogo com os tênis Nike, onde o design arrojado encontra a inovação tecnológica,
+                        proporcionando a você uma experiência única de moda e performance.
+                    </p>
+                    <div class="price">90R$ <span>120R$</span></div>
+                    <a href="#" class="btn">ADICIONAR AO CARRINHO</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="../imagens/product3/1.jpg" alt="" class="featured-image-3">
+                        <img src="../imagens/product3/2.jpg" alt="" class="featured-image-3">
+                        <img src="../imagens/product3/3.jpg" alt="" class="featured-image-3">
+                        <img src="../imagens/product3/4.jpg" alt="" class="featured-image-3">
+                    </div>
+                    <div class="big-image">
+                        <img src="../imagens/product3/1.jpg" alt="" class="big-image-3">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>new nike airmac shoes</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        
+                    </p>
+                    <div class="price">90R$ <span>120R$</span></div>
+                    <a href="#" class="btn">ADICIONAR AO CARRINHO</a>
+                </div>
+            </div>
+        </section>
+        <!--end featured-->
+        <section class="blog" id="blog">
+            <h1 class="heading">Fedbeak <span>Weblog</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="../imagens/team/1.png" alt="">
+                    <h3>Maria heloisa</h3>
+                    <p>
+                        Experiência incrível com o produto! Os tênis Nike não apenas entregam estilo, 
+                        mas também um conforto sem igual. Estou totalmente satisfeito!
+                    </p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="../imagens/team/2.png" alt="">
+                    <h3>Augusto Santos</h3>
+                    <p>
+                        Os tênis Nike superaram minhas expectativas. 
+                        O design moderno combinado com a tecnologia avançada
+                        torna cada passo uma verdadeira experiência de luxo. Recomendo!
+                    </p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa fa-star-half-o"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="../imagens/team/3.png" alt="">
+                    <h3>Layla Vieira</h3>
+                    <p>
+                        Nunca me senti tão confiante e confortável ao mesmo tempo! Os tênis Nike são
+                        simplesmente fenomenais. Uma escolha definitiva para quem busca qualidade e estilo.
+                       
+                    </p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end blog-->
         
-        </div>
-        <div>
-            <img src="../imagens/banber-image.png" alt="">
-        </div>
-    </div>
-
-</section>
-<section>
-    <div class="produtos">
-        <div class="row"><img src="https://static3.tcdn.com.br/img/img_prod/901504/tenis_adidas_adi2000_branco_3041_1_0ae884db6b1e1af67577f9cc9fd1c259.jpg" alt="">
-            <div class="product-text"> 
-                <h5>tenis Adidas ADL2000 <br> Originals</h5> </BR>
-                <p> <b> <h2>R$ 799,98</h2> </b> ou 6x de R$ 133,32 Sem juros </p>  
+        <!--CRIAR O FOOTER DO SITE-->
+        <footer>
+            <div class="container">
+                <ul>
+                    <h3>wc sotore</h3>
+                    <p> algo sobre o site kkkk</p>
+                </ul>
+                <ul>
+                    <h3> link </h3>
+                    <li><a href="#">home</a></li> 
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                </ul>
+                <ul>
+                    <h3> suporte </h3>
+                        <li><a href="#">home</a></li> 
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">home</a></li>
+                </ul>
+                <ul>
+                    <h3> contatos </h3>
+                        <li><p>numero 124345</p></li> 
+                        <li> <p>email smom@gmial</p> </li>
+                        
+                </ul>
             </div>
-        </div>
-        <div class="row"><img src="https://static3.tcdn.com.br/img/img_prod/901504/tenis_nike_dunk_low_x_crushed_d_c_golden_hour_2699_1_3527b58bd7923b134e23dfaea645bd8f.png" alt="">
-            <div class="product-text"> 
-                <h5>Tênis Nike SB Dunk <br> Golden Hour </h5></BR>
-                <p> <b>  <h2>R$ 899,90</h2> </b> ou 6x de R$ 149,98 Sem juros </p>   
-            </div>
-        </div>
-        <div class="row"><img src="https://cdnv2.moovin.com.br/virtualesportes/imagens/produtos/det/tenis-puma-carina-bold-bdp-feminino-384476-01-989e38c4545aca74aaf9b292bc4bb850.jpg" alt="">
-            <div class="product-text">
-            <h5>Tênis Puma Carina Bold BDP <br> feminino</h5> </BR>
-            <p> <b> <h2>R$ 449,00</h2> </b> ou 8x de R$ 56,24 sem juros </p>  
-            </div>
-        </div>
-    </div>
-    <div class="produtos">
-        <div class="row"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT3OUIqk15sk-bvnI_dhL4HrNBGg3mBwFeU0btPeSSfRM3OG24xVITKpbuBy45qXl5bJuNFp3XCaIbJ2wYiSR9aIsWu9Um1UrGUdcu-VacaREf8LH5Fb3Pk&usqp=CAE" alt="">
-            <div class="product-text">
-                <h5>Camiseta Puma Small <br> Logo Tee</h5></BR>
-                <p> <b><h2> R$69,99</h2> </b> ou 2x de R$ 34,99 sem juros  </p> 
-            </div>
-        </div>
-        <div class="row"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTMCMGs8YIA8u5d25siVnGARoxquiGeD1yGafU5IR8s6clVQ2aphIqv9YzqSg034g65rgclWaLCah91Plz21NDL4A5m7sT2Ue2PL0k8DgyhAWunRRUqn2esZg&usqp=CAE" alt="">
-            <div class="product-text">
-                <h5>Camiseta NIke  <br> Sportswear </h5> </BR>
-                <p> <b> <h2>R$ 109,90</h2> </b> ou 2x de R$ 54,95 sem juros  </p> 
-            </div>
-        </div><div class="row"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRa7h59KVBGjtkRe5DqAgcMtlx_Pv3ScuazXoIgHmBk6i7SHJnjBNYDkb4DPU_ZoPisKCsWpCPYgDhdCeH1il41iGmiWx70D8BE1Ad7p1zEWeWXPSvw6WLRDg&usqp=CAE" alt="">
-            <div class="product-text">
-                <h5>Camiseta Adidas <br> Essentials</h5> </BR>
-                <p>  <h2> R$ 149,99 </h2> ou 3x de R$ 49,99 sem juros </p> 
-    
-            </div>
-        </div>
-</section>
-
-<footer>
-    <div class="container">
-        <ul>
-            <h3>wc store</h3>
-            <p> algo sobre o site kkkk</p>
-        </ul>
-        <ul>
-            <h3> link </h3>
-            <li><a href="#">home</a></li> 
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-        </ul>
-        <ul>
-            <h3> suporte </h3>
-                <li><a href="#">home</a></li> 
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-        </ul>
-        <ul>
-            <h3> contatos </h3>
-                <li><p>numero 124345</p></li> 
-                <li> <p>email smom@gmial</p> </li>
-                
-        </ul>
-    </div>
-</footer>
-        
-    </div>
-</footer>
-    <script>
-        setTimeout(function(){
-            alert('Bem-vindo a WC store');
-            },300); 
-            
-    </script>
-</body>
+        </footer>
+    </body>
 </html>
+
+<script src="../js/script.js"></script>
