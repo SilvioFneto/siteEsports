@@ -43,9 +43,6 @@ CREATE TABLE `info` (
 -- Extraindo dados da tabela `contato`
 --
 
-INSERT INTO `info` (`id`, `nome`, `email`, `telefone`, `nascimento`, `sexo`, `cpf`, `senha`) VALUES
-(2, 'Beatriz Souza', 'seila@gmail', '756546365', '1997-01-06','feminino','097122344','12433256' );
-
 --
 -- Indexes for dumped tables
 --
